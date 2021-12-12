@@ -1,0 +1,72 @@
+<ion-header [translucent]="true">
+  <!-- <ion-toolbar>
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-toolbar> -->
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  
+
+  <header>
+
+<div class="logo">
+    <img src="assets\images\logofinal.jpg" alt="logo">
+
+<br>
+<div class="app">
+    <p class="app_name"><b>Fair Bite</b></p>
+</div>
+<br>
+<div class="app-quote">
+    <p class="quote"><b>Take a bite out of hunger <br> Donate Now ! </b><br></p>
+</div>
+</div>
+
+    </header>
+
+<div class="background_img" style="background-color: white;" >
+    <img src="assets\images\bg.jpeg" alt="background" style="background-color: white;">
+</div>
+
+
+<div class="bar bar-footer bar-light" style="background-color: white;"> 
+
+<div class="nav-wrap">
+
+    <div class="nav-bar">
+        <ul>
+            <li>
+                <!-- <a href="home.page.html" ><ion-icon name="home" class="icon1"></ion-icon> <br>
+                  <span>Home</span></a> -->
+                  <a [routerLink]="['/home']" class="small-text"><ion-icon name="home" class="icon1"></ion-icon> <br>
+                  <span>Home</span></a>
+            </li>
+            <li>
+                <!-- <a href="account.page.html" ><ion-icon name="person-circle" class="icon2"></ion-icon> <br>
+                  <span>Account</span></a> -->
+                  <a [routerLink]="['/account']" class="small-text"><ion-icon name="person-circle" class="icon2"></ion-icon> <br>
+                  <span>Account</span></a>
+            </li>
+            <li>
+                <!-- <a href="contact.page.html" > <ion-icon name="chatbox" class="icon3"></ion-icon> <br>
+                  <span>Contact</span></a> -->
+                <a [routerLink]="['/contact']" class="small-text"><ion-icon name="chatbox" class="icon3"></ion-icon> <br>
+                  <span>Contact</span></a>
+            </li>
+            <li>
+                <!-- <a href="donate.page.html" ><ion-icon name="hand-right" class="icon4"></ion-icon> <br>
+                  <span>Donate</span></a> -->
+                <a [routerLink]="['/donate']" class="small-text"><ion-icon name="hand-right" class="icon4"></ion-icon> <br>
+                  <span>Donate</span></a>
+            </li>
+        </ul>
+    </div>
+
+</div>
+
+</div>
+
+    
+</ion-content>

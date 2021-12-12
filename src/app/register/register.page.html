@@ -1,0 +1,87 @@
+<ion-header>
+  <!-- <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button>Back</ion-back-button>
+    </ion-buttons>
+    <div class="header">
+    <ion-title >Register</ion-title>
+    </div>
+  </ion-toolbar> -->
+</ion-header>
+
+<ion-content>
+  <div class="welcome">
+<p>Register <br> <br>Create a new account</p></div>
+
+  <div class="register-form">
+  <form action="\signup.php" method="POST">
+    <ion-item lines="full">
+      <div style="text-align: center;margin: auto;padding: 2rem; color: black; background-color: white; font-size: 25px;width: 100%;font-family: 'Times New Roman', Times, serif; display: flexbox; position:relative" class="divs">
+      <p > <b> Register</b></p>
+    </div>
+    </ion-item>
+    <ion-item lines="full">
+      <div style="color:grey; background-color: white; width: 100%; margin: auto;display: flexbox;position:absolute" class="divs">
+      <ion-label position="floating" >Full Name</ion-label>
+      <div style="background-color: white;left: 0;margin: auto;">
+      <ion-input type="text" required></ion-input></div>
+      </div> 
+    </ion-item>
+
+
+
+    <ion-item lines="full">
+      <div style="color:grey; background-color: white; width: 100%; margin: auto;display: flexbox;position: absolute;" class="divs">
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="text" required></ion-input>
+      </div>
+    </ion-item>
+
+    
+    <ion-item lines="full">
+      <div style="color:grey; background-color: white; width: 100%; margin: auto;display: flexbox;position: absolute;" class="divs">
+      <ion-label position="floating">Password</ion-label>
+      <ion-input type="password" required></ion-input>
+      </div>
+    </ion-item>
+  
+
+    <ion-row>
+      <ion-col>
+        <ion-button type="submit" size="small" shape="round" color="dark" fill="solid" class="register" >Sign Up</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+  </div>
+  
+  <footer style="display: grid;position: relative;justify-content: center;">
+  <div class="nav-wrap">
+
+    <div class="nav-bar">
+        <ul>
+            <li>
+                
+                  <a [routerLink]="['/home']" class="small-text"><ion-icon name="home" class="icon1"></ion-icon> <br>
+                  <span>Home</span></a>
+            </li>
+            <li>
+                
+                  <a [routerLink]="['/account']" class="small-text"><ion-icon name="person-circle" class="icon2"></ion-icon> <br>
+                  <span>Account</span></a>
+            </li>
+            <li>
+                
+                <a [routerLink]="['/contact']" class="small-text"><ion-icon name="chatbox" class="icon3"></ion-icon> <br>
+                  <span>Contact</span></a>
+            </li>
+            <li>
+              
+                <a [routerLink]="['/donate']" class="small-text"><ion-icon name="hand-right" class="icon4"></ion-icon> <br>
+                  <span>Donate</span></a>
+            </li>
+        </ul>
+    </div>
+
+</div>
+</footer>
+</ion-content>
